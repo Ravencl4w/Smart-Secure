@@ -1,6 +1,6 @@
-﻿using SmartSecure.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.SmartSecure;
 using System.Collections.Generic;
-using SmartSecure.Domain.Services.Communications;
+using SmartSecure.Domain.Services.SmartSecure;
 using System.Threading.Tasks;
 
 namespace SmartSecure.Domain.Services.Accounts
