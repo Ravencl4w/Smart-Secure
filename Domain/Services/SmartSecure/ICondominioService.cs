@@ -7,10 +7,10 @@ namespace SmartSecure.Domain.Services.Accounts
 {
     public interface ICondominioService
     {
-        Task<IEnumerable<UserProfile>> ListAsync();
-        Task<ProfileResponse> FindById(int userProfileId);
-        Task<ProfileResponse> SaveAsync(UserProfile profile);
-        Task<ProfileResponse> UpdateAsync(int id, UserProfile profile);
-        Task<ProfileResponse> DeleteAsync(int id);
+        Task<IEnumerable<Condominio>> ListAsync();
+        Task<Condominio> FindById(int Condominio);
+        Task<Condominio> SaveAsync(Condominio condominio);
+        Task<Condominio> UpdateAsync(int id, Condominio condominio);
+        Task<Condominio> DeleteAsync(int id);
     }
 }
