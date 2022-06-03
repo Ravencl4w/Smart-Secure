@@ -1,18 +1,17 @@
-﻿using GoingTo_API.Domain.Models;
-using GoingTo_API.Domain.Services.Communications;
+﻿using SmartSecure.Domain.Models;
+using SmartSecure.Domain.Services.Communications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Services
+namespace SmartSecure.Domain.Services
 {
-    public interface IUserAchievementService
+    public interface ITagService
     {
-        Task<IEnumerable<UserAchievement>> ListAsync();
-        Task<IEnumerable<UserAchievement>> ListByUserIdAsync(int userId);
-        Task<IEnumerable<UserAchievement>> ListByAchievementIdAsync(int achievementId);
-        Task<UserAchievementResponse> AssignUserAchievementAsync(int userId, int achievementId);
-        Task<UserAchievementResponse> UnassignUserAchievementAsync(int userId, int achievementId);
+        Task<IEnumerable<Tag>> ListAsync();
+        Task<IEnumerable<Tag>> ListByUserIdAsync(int userId);
+        Task<IEnumerable<Tag>> ListByTagIdAsync(int tafId);
+
     }
 }

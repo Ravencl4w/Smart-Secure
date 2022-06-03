@@ -1,20 +1,20 @@
-﻿using GoingTo_API.Domain.Models;
-using GoingTo_API.Domain.Models.Accounts;
-using GoingTo_API.Domain.Services.Communications;
+﻿using SmartSecure.Domain.Models;
+using SmartSecure.Domain.Models.Accounts;
+using SmartSecure.Domain.Services.SmartSecure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Services
+namespace SmartSecure.Domain.Services
 {
-    public interface IAchievementService
+    public interface IContactoService
     {
-        Task<IEnumerable<Achievement>> ListAsync();
-        Task<IEnumerable<Achievement>> ListByUserIdAsync(int userId);
-        Task<AchievementResponse> GetByIdAsync(int id);
-        Task<AchievementResponse> SaveAsync(Achievement achievement);
-        Task<AchievementResponse> UpdateAsync(int id, Achievement achievement);
-        Task<AchievementResponse> DeleteAsync(int id);
+        Task<IEnumerable<Contacto>> ListAsync();
+        Task<IEnumerable<Contacto>> ListByUserIdAsync(int userId);
+        Task<ContactoResponse> GetByIdAsync(int id);
+        Task<ContactoResponse> SaveAsync(Contacto contacto);
+        Task<ContactoResponse> UpdateAsync(int id, Contacto contacto);
+        Task<ContactoResponse> DeleteAsync(int id);
     }
 }

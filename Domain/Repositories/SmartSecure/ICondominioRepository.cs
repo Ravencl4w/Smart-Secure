@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using GoingTo_API.Domain.Models;
-using GoingTo_API.Domain.Models.Accounts;
+using SmartSecure.Domain.Models;
+using SmartSecure.Domain.Models.SmartSecure;
 
-namespace GoingTo_API.Domain.Repositories
+namespace SmartSecure.Domain.Repositories
 {
-    public interface IAchievementRepository
+    public interface ICondominioRepository
     {
-        Task<IEnumerable<Achievement>> ListAsync();
-        Task AddAsync(Achievement achievement);
-        Task<Achievement> FindById(int id);
-        void Update(Achievement achievement);
-        void Remove(Achievement achievement);
+        Task<IEnumerable<Condominio>> ListAsync();
+        Task AddAsync(Condominio condominio);
+        Task<Condominio> FindById(int id);
+        void Update(Condominio condominio);
+        void Remove(Condominio condominio);
     }
 }

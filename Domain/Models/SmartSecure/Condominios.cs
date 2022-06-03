@@ -1,14 +1,13 @@
-﻿using GoingTo_API.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.SmartSecure;
 
-namespace GoingTo_API.Domain.Models
+namespace SmartSecure.Domain.Models
 {
-    public class UserAchievement
+    public class Condominio
 
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
-        public int AchievementId { get; set; }
-        public User User { get; set; }
-        public Achievement Achievement { get; set; }
+        public string Name { get; set; }
+        public  string Address { get; set; }
+
     }
 }

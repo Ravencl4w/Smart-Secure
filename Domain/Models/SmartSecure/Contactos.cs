@@ -1,16 +1,12 @@
-﻿using GoingTo_API.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.SmartSecure;
 
-namespace GoingTo_API.Domain.Models
+namespace SmartSecure.Domain.Models
 {
-    public class Favourite
+    public class Contacto
     {
         public int Id { get; set; }
-        public string Description { get; set; }
-        public int UserId { get; set; }
-        
-        public User User { get; set; }
-
-        public Locatable Locatable { get; set; }
-        public int LocatableId { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }  
+        public string Name  { get; set; }
     }
 }

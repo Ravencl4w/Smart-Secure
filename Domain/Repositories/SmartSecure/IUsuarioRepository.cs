@@ -1,16 +1,15 @@
-﻿using GoingTo_API.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.SmartSecure;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Repositories.Accounts
+namespace SmartSecure.Domain.Repositories.SmartSecure
 {
-    public interface IUserRepository
+    public interface IUsuarioRepository
     {
-        Task<IEnumerable<User>> ListAsync();
-        Task AddAsync(User user);
-        Task<User> FindById(int id);
-        void Update(User user);
-
-        void Remove(User user);
+        Task<IEnumerable<Usuario>> ListAsync();
+        Task AddAsync(Usuario usuario);
+        Task<Usuario> FindById(int id);
+        void Update(Usuario usuario);
+        void Remove(Usuario usuario);
     }
 }

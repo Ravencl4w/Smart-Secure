@@ -1,11 +1,11 @@
-﻿using GoingTo_API.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.Accounts;
 using System.Collections.Generic;
-using GoingTo_API.Domain.Services.Communications;
+using SmartSecure.Domain.Services.Communications;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Services.Accounts
+namespace SmartSecure.Domain.Services.Accounts
 {
-    public interface IUserProfileService
+    public interface ICondominioService
     {
         Task<IEnumerable<UserProfile>> ListAsync();
         Task<ProfileResponse> FindById(int userProfileId);

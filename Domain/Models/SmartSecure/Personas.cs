@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Models.Accounts
+namespace SmartSecure.Domain.Models.SmartSecure
 {
-    public class Achievement
+    public class Persona
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Text { get; set; }
-        public int Points { get; set; }
-        public List<UserAchievement> UserAchievements { get; set; }
+        public Usuario Usuario { get; set; }
+        public Tag Tag { get; set; }
+        public string CompleteName { get; set; }
+        public string Photo { get; set; }
     }
 }
 

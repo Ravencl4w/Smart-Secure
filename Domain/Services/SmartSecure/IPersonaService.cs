@@ -1,17 +1,16 @@
-﻿using GoingTo_API.Domain.Models;
-using GoingTo_API.Domain.Services.Communications;
+﻿using SmartSecure.Domain.Models;
+using SmartSecure.Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Services
+namespace SmartSecure.Domain.Services
 {
-    public interface IFavouriteService 
+    public interface IPersonaService 
     {
-        Task<IEnumerable<Favourite>> ListAsync();
-        Task<IEnumerable<Favourite>> ListByUserIdAsync(int userId);
-        Task<FavouriteResponse> AssignFavouriteAsync(int userId, int locatableId);
-        Task<FavouriteResponse> UnassignFavouriteAsync(int userId, int locatableId);
+        Task<IEnumerable<Persona>> ListAsync();
+        Task<IEnumerable<Persona>> AnalizarPersona(int userId);
+        
     }
 }

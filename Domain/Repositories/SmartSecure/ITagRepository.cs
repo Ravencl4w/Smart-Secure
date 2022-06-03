@@ -1,18 +1,15 @@
-﻿using GoingTo_API.Domain.Models.Accounts;
+﻿using SmartSecure.Domain.Models.SmartSecure;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace GoingTo_API.Domain.Repositories.Accounts
+namespace SmartSecure.Domain.Repositories.SmartSecure
 {
-    public interface IUserProfileRepository
+    public interface ITagRepository
     {
-        Task<IEnumerable<UserProfile>> ListAsync(); 
-
-        Task AddAsync(UserProfile profile); 
-
-        Task<UserProfile> FindById(int id);
-        void Update(UserProfile profile);
-
-        void Remove(UserProfile profile); 
+        Task<IEnumerable<Tag>> ListAsync();
+        Task AddAsync(Tag tag);
+        Task<Tag> FindById(int id);
+        void Update(Tag tag);
+        void Remove(Tag tag);
     }
 }
