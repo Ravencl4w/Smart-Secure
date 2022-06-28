@@ -30,4 +30,13 @@ public class PersonaService {
    public Optional<Personas> findById (Long id) {
     return personasRepository.findById(id);
    }
+   public void AnalizarFoto() {
+
+    System.out.println("Analizando foto de la nueva persona...........");
+    if (persona.tag == "sospechoso")
+    {
+        System.out.println("Se ha detectado un sospechoso");
+    }
+   }
+   
 }

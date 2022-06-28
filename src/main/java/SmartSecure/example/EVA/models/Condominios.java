@@ -1,11 +1,13 @@
 package SmartSecure.example.EVA.models;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -23,4 +25,6 @@ public class Condominios {
     private String name;
     @Column(name = "address", nullable = false)
     private String address;
+    @ManyToOne(optional = true, cascade = CascadeType.ALL)
+    private DispositivoIoT camara;
 }

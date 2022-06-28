@@ -6,23 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import SmartSecure.example.EVA.services.CondominiosService;
+import SmartSecure.example.EVA.services.PersonaService;
 
 @RestController
 @RequestMapping ("api/condominios")
 public class CondominioController {
     @Autowired
     private CondominiosService condominiosService;
-
+    @Autowired
+    private PersonaService personaService;
     @GetMapping
-    private void Notificacion() {
-
-        System.out.println("Se ha detectado un sospechoso");
-        System.out.println("Iniciar votación");
-        System.out.println("**FOTO** ¿Esta persona es sospechosa?: SI/NO");
-        System.out.println("Usted escogio la opción: SI");
-        System.out.println("Enviando notificación a todos los usuarios.......");
-        System.out.println("Llamando a la policia.......");
-        System.out.println("Denuncia ejecutada con exito.......");
+    public void CameraFunction(){
+        personaService.AnalizarFoto();
+        condominiosService.NotificarResidentes();
     }
     
 }

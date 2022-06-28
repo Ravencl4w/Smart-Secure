@@ -30,5 +30,28 @@ public class CondominiosService {
    public Optional<Condominios> findById (Long id) {
     return condominiosRepository.findById(id);
    }
+   public void NotificarResidentes(){
+     
+    System.out.println("Se ha avistado un sospechoso");
+    System.out.println("Mostrando foto...... -> **FOTO**");
+    GenerarVotacion();
+    if (GenerarVotacion() == true){
+        LlamarAutoridades();
+    }
+    
+    
+   }
+   public boolean GenerarVotacion() {
+    System.out.println("Generando votación:");
+    System.out.println("Conoce a la persona de la foto SI/NO:");
+    System.out.println("Usted escogio la opción: NO");
+    System.out.println("Enviando notificación a todos los usuarios.......");
+    return true;
+    
+   }
+   public void LlamarAutoridades(){
+    System.out.println("Llamando a la policia.......");
+    System.out.println("Denuncia ejecutada con exito.......");
+   }
    
 }
